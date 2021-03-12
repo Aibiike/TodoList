@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Mama';
+    src: url('../fonts/MamaRegular.eot');
+    src: url('../fonts/MamaRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MamaRegular.woff2') format('woff2'),
+    url('../fonts/MamaRegular.woff') format('woff'),
+    url('../fonts/MamaRegular.ttf') format('truetype'),
+    url('../fonts/MamaRegular.svg#MamaRegular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: 'Mama', sans-serif;
+}
+
+
+.hero {
+    min-height: 100vh;
+    background: url("../images/back.jpg")fixed no-repeat center/cover;
+    padding: 40px 0;
+}
+
+.title{
+    color: white;
+    opacity:0.8;
+}
+.hero__container{
+    max-width: 600px;
+    padding: 30px 15px;
+    text-align: center;
+}
+.task-name{
+    background: rgba(255,255,255,0.9)
+}
+.clear{
+    margin-top: 25px;
+    padding: 10px 50px;
+    background: #198754;
+    border: none;
+    color: white;
+}
+.btn__add{
+    width: 300px;
+}
+
+@media (max-width: 540px) {
+.task-name{
+    width: 100%;
+}
+    .add-todo{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .control-panel{
+        flex-direction: column;
+    }
+}
